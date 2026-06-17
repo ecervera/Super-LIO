@@ -14,6 +14,7 @@ podman run -it --rm --name super_lio docker.io/osrf/ros:jazzy-desktop-full
    mkdir -p /ros2_ws/src
    cd /ros2_ws/src/
    git clone https://github.com/Ericsii/livox_ros_driver2.git ws_livox/src/livox_ros_driver2
+   git clone https://github.com/ecervera/livox_to_pointcloud2.git
    cd .. && colcon build --symlink-install
 
    cd /ros2_ws/src/
